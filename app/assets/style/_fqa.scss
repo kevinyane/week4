@@ -1,0 +1,94 @@
+.fqa-contant{
+    max-width: 1110px;
+    margin: 0px auto;
+    padding-top: 96px;
+    padding-bottom: 160px;
+    @include desktop(){
+        max-width: 960px;
+    }
+    @include pad(){
+        max-width: 690px;
+        padding-top: 60px;
+        padding-bottom:96px;
+    }
+    @include smobile{
+        max-width: 375px;
+    }
+    .fqa-title{
+        max-width: 100%;
+        @include desktop(){
+            max-width: 100%; 
+        }
+        h1{
+            font-size: $fontsize2;
+            line-height: $line-height12;
+            padding-left: 16px;
+            border-left: 8px solid $secondary;
+            margin-bottom: 60px; 
+            display: block;
+            
+            @include pad(){
+                border-left: 4px solid $secondary;    
+            }
+            @include smobile{
+                border-left: 1px solid $secondary;
+                font-size: $fontsize11;
+                line-height: $line-height7;
+                margin-bottom: 24px; 
+                padding-left: 8px;
+            } 
+        }
+        span{
+                font-size: $fontsize5;
+            line-height: $line-height3;
+            font-weight: $fontweight1;
+            padding-bottom: 36px;
+            display: block;
+            @include smobile{
+                font-size: $fontsize7;
+                line-height: $line-height7;
+                padding-bottom: 8px;
+            }
+        }    
+    }
+}
+.fqa-list{
+    max-width: 100%;
+    ul{
+        .fqa-smtitle{
+            margin-bottom: 16px;
+            span{
+                font-size: $fontsize7;
+                line-height: $line-height9;
+                font-weight: $fontweight1; 
+                display: block; 
+                @include smobile{
+                    font-size: $fontsize8;
+                    font-weight: $fontweight1; 
+                } 
+            }
+        }
+        .fqa-smlist{
+            margin-bottom: 32px;
+            margin-left: 95px;
+            @include desktop(){
+                margin-left:80px;
+            }
+            @include pad(){
+                margin-left:60px;
+             }
+            @include smobile{
+                margin-left: 0px;
+            } 
+            p{    
+            font-size: $fontsize8;
+            line-height: $line-height9; 
+            display: block;
+            @include smobile{
+                font-size: $fontsize9;
+                line-height: $line-height10; 
+                } 
+            }   
+        }
+    }
+}    
